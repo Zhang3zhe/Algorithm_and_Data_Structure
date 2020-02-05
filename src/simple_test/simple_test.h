@@ -19,13 +19,14 @@
 #include<iostream>
 #include"src/sort_algorithm/heap_sort/heap_sort_test.h"
 
-namespace SimpleTest
-{
+namespace SimpleTest {
+
 void RUN_ALL_TESTS() {
 	std::cout << "Test start!" << std::endl;
 	HeapSortTest::TEST();
 	std::cout << "All test completed!" << std::endl;
 }
-}
+
+} // namespace SimpleTest
 
 #endif // SIMPLE_TEST_H_

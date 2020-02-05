@@ -30,7 +30,7 @@ class HeapSortTest {
 		 std::vector<int> data, cmp_data;
 
 		 data = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		 cmp_data = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11 };
+		 cmp_data = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		 judge(data, cmp_data);
 
 		 data = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
@@ -53,7 +53,7 @@ class HeapSortTest {
 	 static int access_no;
 
 	 static void judge(std::vector<int>& lhs, std::vector<int>& rhs) {
-		 std::sort(lhs.begin(), lhs.end());
+		 ads::heap_sort(lhs.begin(), lhs.end());
 		 std::sort(rhs.begin(), rhs.end());	   // ²Î¿¼º¯Êý£º std::sort()
 		 ++ case_no;
 		 if (lhs == rhs) {
