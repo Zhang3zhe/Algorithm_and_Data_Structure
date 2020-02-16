@@ -29,28 +29,28 @@ class SelectTest {
 		 std::vector<int> data;
 
 		 data = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		 for (size_t i = 0; i < data.size(); ++i) {
+		 for (std::size_t i = 0; i < data.size(); ++i) {
 			 auto val = ads::select(data.begin(), data.end(), i);
 			 judge(val, data[i]);
 		 }
 		 std::cout << std::endl;
 
 		 data = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-		 for (size_t i = 0; i < data.size(); ++i) {
+		 for (std::size_t i = 0; i < data.size(); ++i) {
 			 auto val = ads::select(data.begin(), data.end(), i);
 			 judge(val, data[i]);
 		 }
 		 std::cout << std::endl;
 
 		 data = { 5, 5, 5, 5, 5, 4, 4, 4, 4, 4 };
-		 for (size_t i = 0; i < data.size(); ++i) {
+		 for (std::size_t i = 0; i < data.size(); ++i) {
 			 auto val = ads::select(data.begin(), data.end(), i);
 			 judge(val, data[i]);
 		 }
 		 std::cout << std::endl;
 
 		 data = { 5 };
-		 for (size_t i = 0; i < data.size(); ++i) {
+		 for (std::size_t i = 0; i < data.size(); ++i) {
 			 auto val = ads::select(data.begin(), data.end(), i);
 			 judge(val, data[i]);
 		 }

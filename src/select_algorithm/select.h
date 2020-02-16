@@ -16,7 +16,7 @@
  */
 #ifndef SELECT_H_
 #define SELECT_H_
-#include<assert.h>
+#include<cassert>
 #include"src/sort_algorithm/quick_sort/quick_sort.h"
 
 namespace ads { // Algorithm and Data Structure
@@ -30,7 +30,7 @@ select(RandomAccessIterator first, RandomAccessIterator last,
 	auto len = last - first;
 	assert(len > 0 && rank >= 0 && rank < len);
 	if (len == 1 && rank == 0)	  return *first;
-	auto partition_iter = ads::partition(first, last, last - 1, compare);
+	auto partition_iter = partition(first, last, last - 1, compare);
 	auto distance = partition_iter - first;
 	if (rank == distance)
 		return *partition_iter;

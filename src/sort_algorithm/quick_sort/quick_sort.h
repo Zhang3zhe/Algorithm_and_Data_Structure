@@ -43,7 +43,7 @@ RandomAccessIterator partition(RandomAccessIterator first, RandomAccessIterator 
 template <typename RandomAccessIterator, typename Compare = std::less<typename std::iterator_traits<RandomAccessIterator>::value_type>>
 inline void quick_sort(RandomAccessIterator first, RandomAccessIterator last, Compare compare=Compare()) {
 	if (last - first < 2)	return;
-	auto pivot_iter = ads::partition(first, last, last - 1, compare);
+	auto pivot_iter = partition(first, last, last - 1, compare);
 	quick_sort(first, pivot_iter, compare);
 	if(pivot_iter != last)
 		quick_sort(pivot_iter + 1, last, compare);
