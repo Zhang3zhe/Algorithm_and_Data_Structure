@@ -18,6 +18,7 @@
 #define SIMPLE_TEST_H_
 #include<iostream>
 #include"src/sort_algorithm/insert_sort/insert_sort_test.h"
+#include"src/sort_algorithm/shell_sort/shell_sort_test.h"
 #include"src/sort_algorithm/heap_sort/heap_sort_test.h"
 #include"src/sort_algorithm/quick_sort/quick_sort_test.h"
 #include"src/sort_algorithm/count_sort/count_sort_test.h"
@@ -30,6 +31,7 @@ namespace SimpleTest {
 void RUN_ALL_TESTS() {
 	std::cout << "Test start!" << std::endl;
 	InsertSortTest::TEST();
+	ShellSortTest::TEST();
 	HeapSortTest::TEST();
 	QuickSortTest::TEST();
 	CountSortTest::TEST();
