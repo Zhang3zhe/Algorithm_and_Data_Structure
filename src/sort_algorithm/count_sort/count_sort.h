@@ -22,7 +22,7 @@ namespace ads { // Algorithm and Data Structure
 
 template <typename RandomAccessIterator>
 void count_sort(RandomAccessIterator first, RandomAccessIterator last,
-				const typename std::iterator_traits<RandomAccessIterator>::value_type& max_val) {
+                const typename std::iterator_traits<RandomAccessIterator>::value_type& max_val) {
 	typedef typename std::iterator_traits<RandomAccessIterator>::value_type T;
 	static_assert(std::is_integral<T>::value, "Sequence to be sorted must be integer!");
 	if (last - first < 2)	return;
