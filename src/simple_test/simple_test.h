@@ -17,6 +17,7 @@
 #ifndef SIMPLE_TEST_H_
 #define SIMPLE_TEST_H_
 #include<iostream>
+#include"src/sort_algorithm/bubble_sort/bubble_sort_test.h"
 #include"src/sort_algorithm/select_sort/select_sort_test.h"
 #include"src/sort_algorithm/insert_sort/insert_sort_test.h"
 #include"src/sort_algorithm/shell_sort/shell_sort_test.h"
@@ -32,6 +33,7 @@ namespace SimpleTest {
 
 void RUN_ALL_TESTS() {
 	std::cout << "Test start!" << std::endl;
+	BubbleSortTest::TEST();
 	SelectSortTest::TEST();
 	InsertSortTest::TEST();
 	ShellSortTest::TEST();
