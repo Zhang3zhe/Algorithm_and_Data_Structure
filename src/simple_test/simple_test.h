@@ -19,6 +19,7 @@
 #include<iostream>
 #include"src/sort_algorithm/insert_sort/insert_sort_test.h"
 #include"src/sort_algorithm/shell_sort/shell_sort_test.h"
+#include"src/sort_algorithm/merge_sort/merge_sort_test.h"
 #include"src/sort_algorithm/heap_sort/heap_sort_test.h"
 #include"src/sort_algorithm/quick_sort/quick_sort_test.h"
 #include"src/sort_algorithm/count_sort/count_sort_test.h"
@@ -32,6 +33,7 @@ void RUN_ALL_TESTS() {
 	std::cout << "Test start!" << std::endl;
 	InsertSortTest::TEST();
 	ShellSortTest::TEST();
+	MergeSortTest::TEST();
 	HeapSortTest::TEST();
 	QuickSortTest::TEST();
 	CountSortTest::TEST();
