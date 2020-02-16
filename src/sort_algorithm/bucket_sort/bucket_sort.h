@@ -24,7 +24,7 @@ namespace ads { // Algorithm and Data Structure
 
 template <typename Iterator>
 void bucket_sort(const Iterator first, const Iterator last,
-	             const typename std::iterator_traits<Iterator>::value_type& min_val,
+                 const typename std::iterator_traits<Iterator>::value_type& min_val,
                  const typename std::iterator_traits<Iterator>::value_type& max_val,
                  const std::size_t bucket_size = 10) {
 	typedef typename std::iterator_traits<Iterator>::value_type T;
